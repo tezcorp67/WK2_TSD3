@@ -74,9 +74,17 @@ console.log(employee2.printInfo())
 // 5. Given the data below, define an interface for representing employees:
 // HINT: You'll need 2 interfaces.
 interface employeeInfo {
-
+    name: string,
+    salary: number,
+    address: EmployeeAddress 
 }
 
+interface EmployeeAddress {
+    street: string,
+    city: string,
+    zipCode: number
+
+}
 
 
 let employee = {
